@@ -1,0 +1,93 @@
+<div class="page-body">
+  <div class="login-container">
+    <h2 class="login-title">Sign Up for Smoke-Free Journey</h2>
+    <form class="login-form" [formGroup]="signupForm" (ngSubmit)="onSignup()">
+      <div class="form-group">
+        <label for="full-name" class="form-label">Full Name</label>
+        <input
+          type="text"
+          id="full-name"
+          placeholder="Enter your full name"
+          class="form-input"
+          formControlName="fullName"
+        />
+      </div>
+      <div class="form-group dob-age-group">
+        <div class="dob-field">
+          <label for="dob" class="form-label">Date of Birth</label>
+          <input
+            type="date"
+            id="dob"
+            class="form-input"
+            formControlName="dob"
+            (change)="calculateAge()"
+            required
+          />
+        </div>
+        <div class="age-field">
+          <label for="age" class="form-label">Age</label>
+          <input
+            type="text"
+            [value]="age"
+            readonly
+            class="form-input age-input"
+            tabindex="-1"
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          class="form-input"
+          formControlName="email"
+        />
+      </div>
+      <div class="form-group">
+        <label for="username" class="form-label">Username</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter your username"
+          class="form-input"
+          formControlName="username"
+        />
+      </div>
+      <div class="form-group">
+        <label for="password" class="form-label">Password</label>
+        <p class="prompt-text-small">Must be at least 8 characters</p>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+          class="form-input"
+          formControlName="password"
+        />
+      </div>
+      <div class="form-group">
+        <label for="confirm-password" class="form-label"
+          >Confirm Password</label
+        >
+        <input
+          type="password"
+          id="confirm-password"
+          placeholder="Confirm your password"
+          class="form-input"
+          formControlName="confirmPassword"
+        />
+      </div>
+      <button type="submit" class="button-primary">Sign Up</button>
+      <div *ngIf="errorMessage" class="prompt-text" style="color: red">
+        {{ errorMessage }}
+      </div>
+    </form>
+    <div class="signup-prompt">
+      <p class="prompt-text">
+        Already have an account?
+        <a [routerLink]="['/login']" class="text-link">Login here</a>
+      </p>
+    </div>
+  </div>
+</div>

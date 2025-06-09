@@ -1,0 +1,165 @@
+<div class="homepage-body">
+  <header class="main-header">
+    <div class="container header-content">
+      <h1 class="site-title">Smoke-Free Journey</h1>
+      <nav class="main-nav">
+        <a [routerLink]="['/homepage']" class="nav-link">Home</a>
+        <a href="#community" class="nav-link">Blogs</a>
+        <a [routerLink]="['/login']" class="nav-link">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content" id="home">
+    <section class="hero-section">
+      <h2 class="hero-title">Take Your First Step Towards a Healthier Life</h2>
+      <p class="hero-subtitle">
+        We're here to support you on your journey to quit smoking. Let's begin!
+      </p>
+      <a href="#resources-section" class="button-primary">Explore Resources</a>
+    </section>
+
+    <section id="benefits-section" class="benefits-section">
+      <h2 class="section-title">Benefits of Quitting</h2>
+      <div class="slider-container">
+        <div class="slider-wrapper">
+          <div class="benefit-card">
+            <img
+              src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/heart.svg"
+              alt="Heart Icon"
+              class="benefit-icon"
+            />
+            <h3 class="benefit-title">Improved Health</h3>
+            <p class="benefit-description">
+              Reduce your risk of heart disease, lung cancer, and other
+              illnesses.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <img
+              src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/zap.svg"
+              alt="Energy Icon"
+              class="benefit-icon"
+            />
+            <h3 class="benefit-title">Increased Energy</h3>
+            <p class="benefit-description">
+              Feel more energetic and less tired throughout the day.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <img
+              src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/trending-up.svg"
+              alt="Money Icon"
+              class="benefit-icon"
+            />
+            <h3 class="benefit-title">Save Money</h3>
+            <p class="benefit-description">
+              Quitting smoking can save you a significant amount of money.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <img
+              src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/smile.svg"
+              alt="Smile Icon"
+              class="benefit-icon"
+            />
+            <h3 class="benefit-title">Better Appearance</h3>
+            <p class="benefit-description">
+              Improve skin, teeth, and overall appearance.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <img
+              src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/family.svg"
+              alt="Family Icon"
+              class="benefit-icon"
+            />
+            <h3 class="benefit-title">Protect Loved Ones</h3>
+            <p class="benefit-description">
+              Shield family from harmful secondhand smoke.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <img
+              src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/clock.svg"
+              alt="Clock Icon"
+              class="benefit-icon"
+            />
+            <h3 class="benefit-title">More Time</h3>
+            <p class="benefit-description">
+              Gain more time and freedom from cigarette breaks.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <img
+              src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/leaf.svg"
+              alt="Leaf Icon"
+              class="benefit-icon"
+            />
+            <h3 class="benefit-title">Fresher Breath</h3>
+            <p class="benefit-description">
+              Eliminate bad breath and improve oral hygiene.
+            </p>
+          </div>
+          <div class="benefit-card">
+            <img
+              src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/sun.svg"
+              alt="Sun Icon"
+              class="benefit-icon"
+            />
+            <h3 class="benefit-title">Enhanced Senses</h3>
+            <p class="benefit-description">
+              Regain your sense of taste and smell.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources-section" class="resources-section">
+      <h2 class="section-title">Resources & Support</h2>
+      <div class="resource-cards-grid">
+        <div class="resource-card">
+          <h3 class="resource-title">Guides & Information</h3>
+          <p class="resource-description">
+            Access our comprehensive guides and articles on quitting smoking.
+          </p>
+          <a href="blogs.html" class="text-link">Learn More</a>
+        </div>
+        <div class="resource-card">
+          <h3 class="resource-title" id="community">Community Forum</h3>
+          <p class="resource-description">
+            Connect with others on the same journey and find support.
+          </p>
+          <a href="#" class="text-link">Join the Community</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="login-section" class="login-register-section">
+      <h2 class="section-title">Login / Register</h2>
+      <div class="login-register-grid">
+        <div class="login-register-card">
+          <h3 class="login-register-title">Login</h3>
+          <p class="login-register-description">
+            Already have an account? Log in here.
+          </p>
+          <a [routerLink]="['/login']" class="text-link">Login</a>
+        </div>
+        <div class="login-register-card">
+          <h3 class="login-register-title">Register</h3>
+          <p class="login-register-description">
+            New here? Create an account to get started.
+          </p>
+          <a [routerLink]="['/signup']" class="text-link">Register</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <p>&copy; 2024 Smoke-Free Journey. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
